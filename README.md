@@ -1,2 +1,2 @@
 # CollapsibleSections
-A sample to project to try collapsible section in collection views flow layout
+A sample proj to try collapsible section in collection views compositional layout
