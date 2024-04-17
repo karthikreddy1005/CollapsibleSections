@@ -7,15 +7,23 @@
 
 import Foundation
 
-struct Section: Codable {
-    let title: String
- }
+enum SectionType {
+    case small
+    case large
+}
 
+struct ProfileSection {
+    let type: SectionType
+    let itemCount: Int
+    let title: String
+}
 
 class ProfileViewControllerModel {
-    let sectionsData: [Section] = [
-        Section(title: "section - 1"),
-        Section(title: "section -2"),
-        Section(title: "section - 3")
+    let sectionsData: [ProfileSection] = [
+        ProfileSection(type: .small, itemCount: 10, title: "Small Section"),
+        ProfileSection(type: .large, itemCount: 5, title: "Large Section"),
+        ProfileSection(type: .small, itemCount: 2, title: "third section"),
+        ProfileSection(type: .small, itemCount: 1, title: "fourth section")
+        // Add more sections as needed
     ]
 }

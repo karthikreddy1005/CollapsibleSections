@@ -46,13 +46,20 @@ class ProfileViewController: UIViewController {
     }
     
     func createSectionLayout(sectionIndex: Int) -> NSCollectionLayoutSection {
-        // Define item size
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.25), heightDimension: .absolute(44))
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        let sectionData = model.sectionsData[sectionIndex]
+        
+        // Determine the item size based on section data
+        let itemSize: NSCollectionLayoutSize
+        switch sectionData.type {
+        case .small:
+            itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.25), heightDimension: .absolute(44))
+        case .large:
+            itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .absolute(100))
+        }
         
         // Define group size (same as item size)
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(100))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,subitems: [item])
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,subitems: [NSCollectionLayoutItem(layoutSize: itemSize)])
         group.interItemSpacing = .fixed(5)
         
         // Create section with group
@@ -68,6 +75,7 @@ class ProfileViewController: UIViewController {
         
         return section
     }
+
 }
 
 extension ProfileViewController: UICollectionViewDataSource {
@@ -76,7 +84,7 @@ extension ProfileViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return model.sectionsData[section].itemCount
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
