@@ -18,6 +18,8 @@
 		C999FC8D2BD019110037702B /* CollapsibleCollectionViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999FC8C2BD019110037702B /* CollapsibleCollectionViewUITestsLaunchTests.swift */; };
 		C999FC9A2BD01AB40037702B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999FC992BD01AB40037702B /* ProfileViewController.swift */; };
 		C999FC9C2BD01AC40037702B /* ProfileViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999FC9B2BD01AC40037702B /* ProfileViewControllerModel.swift */; };
+		C999FC9E2BD036980037702B /* CommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999FC9D2BD036980037702B /* CommonCell.swift */; };
+		C999FCA02BD039780037702B /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999FC9F2BD039780037702B /* SectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		C999FC8C2BD019110037702B /* CollapsibleCollectionViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleCollectionViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C999FC992BD01AB40037702B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C999FC9B2BD01AC40037702B /* ProfileViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerModel.swift; sourceTree = "<group>"; };
+		C999FC9D2BD036980037702B /* CommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCell.swift; sourceTree = "<group>"; };
+		C999FC9F2BD039780037702B /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				C999FC772BD019110037702B /* Info.plist */,
 				C999FC992BD01AB40037702B /* ProfileViewController.swift */,
 				C999FC9B2BD01AC40037702B /* ProfileViewControllerModel.swift */,
+				C999FC9D2BD036980037702B /* CommonCell.swift */,
+				C999FC9F2BD039780037702B /* SectionHeaderView.swift */,
 			);
 			path = CollapsibleCollectionView;
 			sourceTree = "<group>";
@@ -266,7 +272,9 @@
 			files = (
 				C999FC6E2BD0190F0037702B /* ViewController.swift in Sources */,
 				C999FC6A2BD0190F0037702B /* AppDelegate.swift in Sources */,
+				C999FC9E2BD036980037702B /* CommonCell.swift in Sources */,
 				C999FC9A2BD01AB40037702B /* ProfileViewController.swift in Sources */,
+				C999FCA02BD039780037702B /* SectionHeaderView.swift in Sources */,
 				C999FC9C2BD01AC40037702B /* ProfileViewControllerModel.swift in Sources */,
 				C999FC6C2BD0190F0037702B /* SceneDelegate.swift in Sources */,
 			);
