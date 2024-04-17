@@ -26,7 +26,8 @@ class ViewController: UIViewController {
     }()
     
     @objc func buttonClicked() {
-        
+        let vc = ProfileViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     func setupViews() {

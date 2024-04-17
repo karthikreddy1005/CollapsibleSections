@@ -16,6 +16,8 @@
 		C999FC812BD019110037702B /* CollapsibleCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999FC802BD019110037702B /* CollapsibleCollectionViewTests.swift */; };
 		C999FC8B2BD019110037702B /* CollapsibleCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999FC8A2BD019110037702B /* CollapsibleCollectionViewUITests.swift */; };
 		C999FC8D2BD019110037702B /* CollapsibleCollectionViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999FC8C2BD019110037702B /* CollapsibleCollectionViewUITestsLaunchTests.swift */; };
+		C999FC9A2BD01AB40037702B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999FC992BD01AB40037702B /* ProfileViewController.swift */; };
+		C999FC9C2BD01AC40037702B /* ProfileViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C999FC9B2BD01AC40037702B /* ProfileViewControllerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C999FC862BD019110037702B /* CollapsibleCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollapsibleCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C999FC8A2BD019110037702B /* CollapsibleCollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleCollectionViewUITests.swift; sourceTree = "<group>"; };
 		C999FC8C2BD019110037702B /* CollapsibleCollectionViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleCollectionViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C999FC992BD01AB40037702B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C999FC9B2BD01AC40037702B /* ProfileViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				C999FC722BD019110037702B /* Assets.xcassets */,
 				C999FC742BD019110037702B /* LaunchScreen.storyboard */,
 				C999FC772BD019110037702B /* Info.plist */,
+				C999FC992BD01AB40037702B /* ProfileViewController.swift */,
+				C999FC9B2BD01AC40037702B /* ProfileViewControllerModel.swift */,
 			);
 			path = CollapsibleCollectionView;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			files = (
 				C999FC6E2BD0190F0037702B /* ViewController.swift in Sources */,
 				C999FC6A2BD0190F0037702B /* AppDelegate.swift in Sources */,
+				C999FC9A2BD01AB40037702B /* ProfileViewController.swift in Sources */,
+				C999FC9C2BD01AC40037702B /* ProfileViewControllerModel.swift in Sources */,
 				C999FC6C2BD0190F0037702B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
